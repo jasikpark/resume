@@ -1,6 +1,42 @@
 \documentclass[letterpaper,10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage[margin=16mm]{geometry}
+\usepackage{nopageno}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{titlesec}
 
-\usepackage{resume}
+\usepackage{ifxetex,ifluatex}
+
+\linespread{1}
+\setcounter{secnumdepth}{0}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+
+\setlist{leftmargin=3.5mm}
+
+
+\providecommand{\tightlist}
+  {\setlength{\itemsep}{4pt}\setlength{\parskip}{0pt}}
+
+% Skills definition list type
+\newlist{skills}{description}{1}
+\setlist[skills]{leftmargin=11em,style=nextline}
+
+% For the section heading allow runin so we can align text to the right
+\titleformat{\section}[runin]
+  {\normalfont\Large\bfseries}
+  {}{0pt}{}
+
+\titleformat{\subsubsection}[runin]
+  {\normalfont\bfseries}
+  {}{0pt}{}
+
+% \usepackage{resume}
 \usepackage[pdftex,
 bookmarks=true,
 unicode=true,
@@ -11,7 +47,9 @@ pdftitle={Caleb Jasik's Resume}]{hyperref}
 
     \section{\Huge Caleb Jasik}\label{sec:hugecaleb-jasik}
 
-    \hfill 104 N Houston St. \#1742 College Station, TX 77841
+    \hfill 104 N Houston St. \#1742
+
+    \hfill College Station, TX 77841
 
     \hfill \href{mailto:jasikpark@tamu.edu}{jasikpark@tamu.edu} ---
     \href{tel:2816149841}{(281) 614--9841}
@@ -24,7 +62,7 @@ pdftitle={Caleb Jasik's Resume}]{hyperref}
 
     Summa Cum Laude - CyFair High School 2016
 
-    BS - Electrical Systems Engineering Technology 2021
+    BS - Electrical Systems Engineering Technology 2022
 
     Texas A\&M University, College Station, Texas
 
@@ -41,46 +79,31 @@ pdftitle={Caleb Jasik's Resume}]{hyperref}
         Basic CLC design, Arduino and TI embedded systems
         \item[Other Interests]
         User Experience design
-        \item[Websites]
-        Principal developer for \href{https://www.tamuccc.com}{https://www.tamuccc.com} for the TAMU Collegiate Content Creatives
     \end{skills}
 
 
     \subsection{Experience}\label{subsec:experience}
 
+    \subsubsection{TAMU Collegiate Content Creatives}
+    \hfill Principal Developer --- \emph{September 2018}
+
+    Used Netlify, a CDN and hosting provider to continously deliver a staticly hosted website for my club. Whenever a new git commit is posted to master, Netlify pulls that commit and builds with Hugo to generate the website.
+
     \subsubsection{Chicken Oil Company}
     \hfill Cashier and Cook --- \emph{May 2019 - August 2019}
 
-    \begin{itemize}
-        \tightlist{}
-            \item 
-            Worked quickly in a team of 2-5 team members to deliver quality meals to customers in a timely manner.
-    \end{itemize}
+    Worked quickly in a team of 2-5 team members to deliver quality meals to customers in a timely manner.
 
     \subsubsection{Duddley's Draw}
     \hfill Bouncer and Cook --- \emph{August 2018 - March 2019}
 
-    \begin{itemize}
-        \tightlist{}
-        \item 
-        Verified age and sobriety of customers at door.
-        \item
-        Worked quickly, under pressure to prepare a variety of delicious food-stuffs.
-    \end{itemize}
+    Verified age and sobriety of customers at door. Worked quickly, under pressure to prepare a variety of delicious food-stuffs.
 
 
     \subsubsection{Chick-fil-a}
     \hfill Cashier and Cook --- \emph{April 2015 - January 2019}
 
-    \begin{itemize}
-        \tightlist{}
-        \item
-        Worked in fast-paced workspace to deliver fresh and delicious food within 2 minutes of ordering.
-        \item
-        Quickly confirmed order and requested specialty items to be made on time, especially during rush hours.
-        \item
-        Kept entire store topped up and stocked up to enable the rest of the team to work at top speed.
-    \end{itemize}
+    Flexibly worked any position in the restaurant required quickly, with a specific attention to detail and ability to pull long shifts of continuous work.
 
     \subsubsection{Forest Glen Springs Camp / Camp Wilderness Ridge}
     \hfill Program Staff and Camp Counselor --- \emph{May 2012 - September 2017}
