@@ -12,11 +12,11 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@master
         with:
-          root_file: resume.tex
+          root_file: caleb-jasik-resume.tex
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          files: resume.pdf
+          files: caleb-jasik-resume.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Pings repo
