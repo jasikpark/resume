@@ -1,4 +1,4 @@
-name: CI - tectonic
+name: CI - latex-action
 on: [push]
 
 jobs:
@@ -7,9 +7,9 @@ jobs:
     name: A job to Compile Latex file
     steps:
       - uses: actions/checkout@v1
-      - name: Compilation
-        uses: vinay0410/tectonic-action@master
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: caleb-jasik-resume.tex
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tex_path: "caleb-jasik-resume.tex"
