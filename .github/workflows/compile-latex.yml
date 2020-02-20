@@ -1,4 +1,4 @@
-name: CI - tectonic
+name: CI
 on: [push]
 
 jobs:
